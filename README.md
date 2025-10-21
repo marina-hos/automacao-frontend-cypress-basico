@@ -21,8 +21,4 @@
 - Formulário para teste - DemoQA Forms: https://demoqa.com/automation-practice-form
 - Guia de Selectors no Cypress: https://docs.cypress.io/guides/core-concepts/interacting-with-elements
 
-🚀 Como Rodar os Testes
-Clone o repositório 
-Instale dependências: npm install
-Abra o Cypress: npx cypress open
 
