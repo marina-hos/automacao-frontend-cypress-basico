@@ -1,0 +1,56 @@
+describe("Calculadora TestSheepNZ", () => {
+    beforeEach(() => {      
+        cy.visit("/BasicCalculator")
+  }) 
+    it("Deve realizar uma soma corretamente", () => {
+        cy.get('#number1Field').type('10')
+        cy.wait(500)
+        cy.get('#number2Field').type('20')
+        cy.wait(500) 
+        cy.get('#selectOperationDropdown').select('Add')
+        cy.wait(500) 
+        cy.get('#calculateButton').click()
+        cy.wait(500) 
+        cy.get('#numberAnswerField').should('have.value', '30')
+        cy.wait(500) 
+    })
+
+    it("Deve realizar uma subtração corretamente", () => {
+        cy.get('#number1Field').type('50')
+        cy.wait(500) 
+        cy.get('#number2Field').type('20')
+        cy.wait(500) 
+        cy.get('#selectOperationDropdown').select('Subtract')
+        cy.wait(500) 
+        cy.get('#calculateButton').click()
+        cy.wait(500) 
+        cy.get('#numberAnswerField').should('have.value', '30')
+        cy.wait(500) 
+    })
+
+    it("Deve realizar uma multiplicação corretamente", () => {
+        cy.get('#number1Field').type('5')
+        cy.wait(500) 
+        cy.get('#number2Field').type('6')
+        cy.wait(500) 
+        cy.get('#selectOperationDropdown').select('Multiply')
+        cy.wait(500) 
+        cy.get('#calculateButton').click()
+        cy.wait(500) 
+        cy.get('#numberAnswerField').should('have.value', '30')
+        cy.wait(500) 
+
+    })
+
+    it("Deve realizar uma divisão corretamente", () => {
+        cy.get('#number1Field').type('120')
+        cy.wait(500) 
+        cy.get('#number2Field').type('4')   
+        cy.wait(500) 
+        cy.get('#selectOperationDropdown').select('Divide')
+        cy.wait(500) 
+        cy.get('#calculateButton').click()
+        cy.wait(500) 
+        cy.get('#numberAnswerField').should('have.value', '30')
+    })
+})
