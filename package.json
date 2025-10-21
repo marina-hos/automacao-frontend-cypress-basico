@@ -1,1 +1,17 @@
+{
+  "name": "automacao-frontend-cypress-basico",
+  "version": "1.0.0",
+  "description": "Curso de Cypress básico para automação frontend iniciante",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "cypress:open": "cypress open"
+  },
+  "keywords": ["cypress", "automação", "testes"],
+  "author": "Marina Hortencia",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^12.0.0"
+  }
+}
 
