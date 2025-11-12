@@ -21,7 +21,7 @@
 📌 Recursos Úteis
 
 - Documentação oficial Cypress: https://docs.cypress.io/ 
-- Formulário para teste - DemoQA Forms: https://demoqa.com/automation-practice-form
+- Aplicação para teste - https://testsheepnz.github.io/BasicCalculator.html
 - Guia de Selectors no Cypress: https://docs.cypress.io/guides/core-concepts/interacting-with-elements
 
 
